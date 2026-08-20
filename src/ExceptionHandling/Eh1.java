@@ -17,5 +17,6 @@ public class Eh1 {
         catch (ArithmeticException a){
             System.out.println("Please give non zero denominator");
         }
+        sc.close();
     }
 }

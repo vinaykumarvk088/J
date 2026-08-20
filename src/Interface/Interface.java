@@ -26,7 +26,7 @@ interface  IB extends IA{
         System.out.println("interface IB default method"); // default method of II is acting as implemented by IB default method
     }
 }
-class CA implements II,IA,IB{
+class CA implements IB{
 
    public void c(){
         System.out.println("Overridden IB interface method");
@@ -45,7 +45,7 @@ class CA implements II,IA,IB{
         return c;
     }
 }
-class CB extends CA implements II,IA,IB{
+class CB extends CA {
 //    public void c(){
 //        System.out.println("Overridden IB interface method");
 //    }

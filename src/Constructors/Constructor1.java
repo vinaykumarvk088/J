@@ -36,7 +36,7 @@ public class Constructor1 {
         Obj1.setAge(25);
         System.out.println(Obj1.getRollNo());
         System.out.println(Obj1.getAge());
-        System.out.println(Obj1.count);
+        System.out.println(Constructor1.count);
         System.out.println(Obj2.name);
     }
 }

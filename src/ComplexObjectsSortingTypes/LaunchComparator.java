@@ -47,29 +47,29 @@ public class LaunchComparator {
         System.out.println(al);
 //        Collections.sort(al,new Demo());
 //2) Anonymous inner class
-        Comparator<Cricketers> cp=new Comparator<Cricketers>() {
-            public int compare(Cricketers c1, Cricketers c2) {
-                if(c1.avg<c2.avg){
-                    return 1;
-                }
-                else if(c1.avg==c2.avg)
-                    return 0;
-                else
-                    return -1;
-            }
-        };
+        // Comparator<Cricketers> cp=new Comparator<Cricketers>() {
+            // public int compare(Cricketers c1, Cricketers c2) {
+                // if(c1.avg<c2.avg){
+                    // return 1;
+                // }
+                // else if(c1.avg==c2.avg)
+                    // return 0;
+                // else
+                    // return -1;
+            // }
+        // };
 //        Collections.sort(al,cp);//we can directly put the comparator object at cp of optimized code
 //3) Lamda Expression
-        Comparator<Cricketers>cl=(Cricketers c1, Cricketers c2) ->{
-            if(c1.avg<c2.avg){
-                return 1;
-            }
-            else if(c1.avg==c2.avg)
-                return 0;
-            else
-                return -1;
+        // Comparator<Cricketers>cl=(Cricketers c1, Cricketers c2) ->{
+            // if(c1.avg<c2.avg){
+                // return 1;
+            // }
+            // else if(c1.avg==c2.avg)
+                // return 0;
+            // else
+                // return -1;
 
-        };
+        // };
 //        Collections.sort(al,cl);//or we can directly add lamda
         Collections.sort(al,(Cricketers c1, Cricketers c2) ->{
             if(c1.avg<c2.avg){

@@ -15,16 +15,20 @@ class B extends A{
 }
 public class StaticKeyword {
     static void main(String[] args) {
-        B ob =new B();
+        // B ob =new B();
         A.a();
         B.a();
         B.b();
         System.out.println("***************************************************");
-        ob.a();
-        ob.b();
+        // ob.a(); 
+        // ob.b();
+        //or
+        B.a();
+        B.b(); 
+        
         System.out.println("***************************************************");
-        A ob1=new B();
-        ob1.a();//static method a of class A will print because of A class reference
-        ((B)ob1).a(); //The overridden static method acts as a specialized method
+        // A ob1=new B();
+        // ob1.a();//static method a of class A will print because of A class reference
+        // ((B)ob1).a(); //The overridden static method acts as a specialized method
     }
 }

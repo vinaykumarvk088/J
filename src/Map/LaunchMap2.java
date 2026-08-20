@@ -14,7 +14,7 @@ interface Alpha{
 public class LaunchMap2 {
     static void main() {
         Alpha.Beta.beta();
-        HashMap<Integer,String> hm=new HashMap<>();
+        Map<Integer,String> hm=new HashMap<>();
         hm.put(2,"Vinaykumar");
         hm.put(3,"Raviteja");
         hm.put(1,"Tharun");
@@ -30,12 +30,12 @@ public class LaunchMap2 {
         while(itr1.hasNext()){
             System.out.println(itr1.next());
         }
-        Set s =hm.entrySet();
-        Iterator itr2=s.iterator();
+        Set<Map.Entry<Integer,String>> s =hm.entrySet();
+        Iterator<Map.Entry<Integer,String>> itr2=s.iterator();
         while (itr2.hasNext()){
            // System.out.println(itr2.next());
             //or
-            Map.Entry pair= (Map.Entry) itr2.next();
+            Map.Entry<Integer,String> pair= (Map.Entry<Integer,String>) itr2.next();
             System.out.println("Key : "+pair.getKey()+"---"+"Values : "+pair.getValue());
 
         }

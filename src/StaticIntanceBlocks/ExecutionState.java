@@ -22,7 +22,7 @@ public class ExecutionState{
     static void main(String[] args) {
         System.out.println("Main Method");
         Demo N=new Demo();
-        Demo n=new Demo();
+        // Demo n=new Demo();
         Demo.me();
         System.out.println(Demo.a);
         System.out.println(N.b);

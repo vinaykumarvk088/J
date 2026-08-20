@@ -13,6 +13,7 @@ class Alpha extends Thread
         System.out.println("Enter your age");
         int age=sc.nextInt();
         System.out.println("id :"+id +" age :" +age);
+        sc.close();
     }
 
     @Override
