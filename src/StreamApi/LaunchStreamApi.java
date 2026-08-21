@@ -1,6 +1,6 @@
 package StreamApi;
 //StreamApi are used to interact with data-structures without modifying them-
-//-by using stream pipelines for data manipulation without messy for loop and its temp-
+//-by using stream pipelines for data manipulation without messy for looping and its temp-
 //-reference variables.
 //It does not change original data.(Immutability)
 
