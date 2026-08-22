@@ -11,10 +11,10 @@ class Even{
         return nums.stream().filter(i -> i%2==0).map(i ->i*2).reduce(0, Integer::sum);
     }
     int max(List<Integer> nums){
-        return nums.stream().filter(i -> i%2==0).reduce(0, Integer::max);
+        return nums.stream().filter(i -> i%2==0).reduce(Integer::max).get();
     }
     int min(List<Integer> nums){
-        return nums.stream().filter(i -> i%2==0).reduce(0, Integer::min);
+        return nums.stream().filter(i -> i%2==0).reduce(Integer::min).get();
     }
 
 }
