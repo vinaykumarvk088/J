@@ -75,13 +75,13 @@ public class CircularQueue {
         ob.add(2);
         ob.add(3);
         ob.add(4);
-//        ob.display();  //1 2 3 4
-//        ob.add(5);     //array is full, couldn't add 5.
-//        ob.remove();
-//        ob.display();  //2 3 4
-//        ob.add(5);
-//        ob.display();  //2 3 4 5
-//        ob.peek();     //2
+       ob.display();  //1 2 3 4
+       ob.add(5);     //array is full, couldn't add 5.
+       ob.remove();
+       ob.display();  //2 3 4
+       ob.add(5);
+       ob.display();  //2 3 4 5
+       ob.peek();     //2
         ob.poll();     //2
         ob.display();
         ob.add(5);

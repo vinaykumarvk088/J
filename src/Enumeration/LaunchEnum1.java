@@ -15,9 +15,10 @@ enum Result{
         System.out.println("zero param Constructor of Result");
     }
 
-    //To assign and get the value of marks we need getters and setters.
-    //As we can't use parameterized constructor.
+    //To assign and get the value of marks we need getters and setters-
+    //-as we can't use parameterized constructor.
     //Constants always zero params so they always calls zero param constructor.
+    
     public int getMarks() {
         return marks;
     }
